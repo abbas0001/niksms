@@ -3,5 +3,5 @@
 USERNAME=09029451328
 PASSWORD=Aa741852369
 
-DATA=$(curl -d "username=$USERNAME&password=$PASSWORD" https://niksms.com/fa/publicapi/GetPanelExpireDate)
+DATA=$(curl -s -d "username=$USERNAME&password=$PASSWORD" https://niksms.com/fa/publicapi/GetPanelExpireDate)
 echo $DATA
